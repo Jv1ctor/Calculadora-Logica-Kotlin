@@ -2,6 +2,7 @@ package logicFunctions
 
 import data.ResponseToken
 import data.TokensExpr
+import helpers.isNotOperator
 import helpers.isOperator
 
 object LexSynAnalyser {
@@ -24,6 +25,10 @@ object LexSynAnalyser {
 
                 isOperator(token) &&
                         (beforeExp == TokensExpr.TERM || beforeExp == TokensExpr.CLOSE_PARENTHESE) -> true
+
+                isNotOperator(token) &&
+                        (beforeExp == TokensExpr.OPEN_PARENTHESE || beforeExp == null)  -> true
+
 
                 token == TokensExpr.CLOSE_PARENTHESE &&
                         (beforeExp == TokensExpr.TERM || beforeExp == TokensExpr.CLOSE_PARENTHESE) -> true

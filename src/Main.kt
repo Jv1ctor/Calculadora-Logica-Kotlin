@@ -10,7 +10,7 @@ import logicFunctions.TruthTableGenerator
 
 
 fun main() {
-//    val exp = "(A ∧ B) → C ∨ A"
+// val exp = "(A ∧ B) → C ∨ A"
 //
 //    val tokens = Tokenizer.generate(exp)
 //
@@ -25,7 +25,7 @@ fun main() {
 ////        println("${r["A"]} and ${r["B"]} = ${logicFunctions.Operators.and(r["A"], r["B"])}");
 ////    }
 
-    val exp = "(A ∨ B)"
+    val exp = "~A ∨ B"
 
     val tokens = Tokenizer.generate(exp)
 

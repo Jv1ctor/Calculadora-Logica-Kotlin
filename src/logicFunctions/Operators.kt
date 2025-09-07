@@ -1,7 +1,7 @@
 package logicFunctions
 
 object Operators {
-    fun and(a: Boolean?, b: Boolean?) = a == true && b == true
+    fun and(a: Boolean, b: Boolean) = a && b
     fun or(a: Boolean, b: Boolean) = a || b
     fun not(a: Boolean) = !a
     fun than(a: Boolean, b: Boolean) = or(not(a), b)
