@@ -5,10 +5,10 @@ import data.Term
 import data.TokensExpr
 
 object Tokenizer {
-    val listOfExpressionOrder: MutableList<TokensExpr> = mutableListOf()
-    val listOfTerm: MutableList<Term> = mutableListOf()
-    var countOpen: Int = 0
-    var countClose: Int = 0
+    private val listOfExpressionOrder: MutableList<TokensExpr> = mutableListOf()
+    private val listOfTerm: MutableList<Term> = mutableListOf()
+    private var countOpen: Int = 0
+    private var countClose: Int = 0
 
     fun generate(exp: String): ResponseToken {
         // separa a expressao com uma lista de cada caractere
@@ -22,7 +22,7 @@ object Tokenizer {
                 "∨" -> listOfExpressionOrder.add(TokensExpr.OP_OR)
                 "~" -> listOfExpressionOrder.add(TokensExpr.OP_NOT)
                 "↔" -> listOfExpressionOrder.add(TokensExpr.OP_EXTHEN)
-                "⊕" -> listOfExpressionOrder.add(TokensExpr.OP_EXOR)
+                "⊻" -> listOfExpressionOrder.add(TokensExpr.OP_EXOR)
                 "(" -> {
                     countOpen += 1
                     listOfExpressionOrder.add(TokensExpr.OPEN_PARENTHESE)

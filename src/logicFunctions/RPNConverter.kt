@@ -7,7 +7,7 @@ import helpers.isOperator
 import java.util.Stack
 
 object RPNConverter {
-    fun toRPN(tokens: List<TokensExpr>, terms: List<Term>): List<TokensExpr> {
+    fun toRPN(tokens: List<TokensExpr>): List<TokensExpr> {
         val output = mutableListOf<TokensExpr>()
         val stack = Stack<TokensExpr>()
 

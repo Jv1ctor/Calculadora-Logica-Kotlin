@@ -8,7 +8,6 @@ object RPNEvaluator {
     fun evaluate(rpn: List<TokensExpr>, assignment: Map<String, Boolean>, terms: List<Term>): Boolean {
         val stack = Stack<Boolean>()
         var termIndex = 0
-
         for (token in rpn) {
             when {
                 token == TokensExpr.TERM -> {

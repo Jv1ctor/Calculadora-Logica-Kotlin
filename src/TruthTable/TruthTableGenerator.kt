@@ -1,4 +1,4 @@
-package logicFunctions
+package TruthTable
 
 import data.Term
 

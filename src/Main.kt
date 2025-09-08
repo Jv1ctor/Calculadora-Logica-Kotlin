@@ -1,7 +1,6 @@
 import logicFunctions.LexSynAnalyser
 import logicFunctions.Tokenizer
-import logicFunctions.TruthTableExecutor
-import logicFunctions.TruthTableGenerator
+import TruthTable.TruthTableExecutor
 
 /**
  * You can edit, run, and share this code.
@@ -10,27 +9,18 @@ import logicFunctions.TruthTableGenerator
 
 
 fun main() {
-// val exp = "(A ∧ B) → C ∨ A"
-//
-//    val tokens = Tokenizer.generate(exp)
-//
-////    println(tokens.listExpr)
-//    val analyser = LexSynAnalyser.run(tokens)
-//
-//    val result = TruthTableGenerator.allCombinations(tokens.listTerm)
-//
-////    print(result)
-////    for (r in result){
-////
-////        println("${r["A"]} and ${r["B"]} = ${logicFunctions.Operators.and(r["A"], r["B"])}");
-////    }
-
+    // val exp = "(A ∧ B) → C ∨ A"
     val exp = "~A ∨ B"
 
     val tokens = Tokenizer.generate(exp)
-
+    println("Execução da validação sintatica e lexica: \n")
     if (LexSynAnalyser.run(tokens)) {
-        TruthTableExecutor.run(tokens)
+        println()
+        val response = TruthTableExecutor.run(tokens)
+
+        println("Execução da Tabela: \n")
+        TruthTableExecutor.printTruthTable(tokens)
+        print(response)
     } else {
         println("Fórmula mal formada (não é FBF)")
     }
