@@ -24,7 +24,7 @@ object TruthTableExecutor {
         return ResponseTable(assignments, results, classify)
     }
 
-    public fun printTruthTable(response: ResponseToken) {
+    fun printTruthTable(response: ResponseToken) {
         val table = this.run(response)
 
         if (table.assignments.isEmpty()) return
