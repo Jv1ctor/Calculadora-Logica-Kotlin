@@ -1,14 +1,27 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+import logicFunctions.LexSynAnalyser
+import logicFunctions.Tokenizer
+import TruthTable.TruthTableExecutor
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+
+fun main() {
+    // val exp = "(A ∧ B) → C ∨ A"
+    val exp = "~A ∨ B"
+
+    val tokens = Tokenizer.generate(exp)
+    println("Execução da validação sintatica e lexica: \n")
+    if (LexSynAnalyser.run(tokens)) {
+        println()
+        val response = TruthTableExecutor.run(tokens)
+
+        println("Execução da Tabela: \n")
+        TruthTableExecutor.printTruthTable(tokens)
+        print(response)
+    } else {
+        println("Fórmula mal formada (não é FBF)")
     }
 }
