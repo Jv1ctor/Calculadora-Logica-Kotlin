@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/calculadora-logica.iml" filepath="$PROJECT_DIR$/calculadora-logica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calculadora-logica.main.iml" filepath="$PROJECT_DIR$/.idea/modules/calculadora-logica.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calculadora-logica.test.iml" filepath="$PROJECT_DIR$/.idea/modules/calculadora-logica.test.iml" />
     </modules>
   </component>
 </project>
