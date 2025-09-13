@@ -5,12 +5,12 @@ import data.Term
 import data.TokensExpr
 
 object Tokenizer {
-    private val listOfExpressionOrder: MutableList<TokensExpr> = mutableListOf()
-    private val listOfTerm: MutableList<Term> = mutableListOf()
-    private var countOpen: Int = 0
-    private var countClose: Int = 0
-
     fun generate(exp: String): ResponseToken {
+        var listOfExpressionOrder: MutableList<TokensExpr> = mutableListOf()
+        var listOfTerm: MutableList<Term> = mutableListOf()
+        var countOpen: Int = 0
+        var countClose: Int = 0
+
         // separa a expressao com uma lista de cada caractere
         val expInArr = exp.replace(" ", "").trim().split("").drop(1).dropLast(1)
 
