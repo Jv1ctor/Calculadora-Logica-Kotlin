@@ -1,3 +1,5 @@
 package dto
+import kotlinx.serialization.Serializable
 
-data class ExpressionWrong()
+@Serializable
+data class ExpressionWrong(val expression: String, val error: String)

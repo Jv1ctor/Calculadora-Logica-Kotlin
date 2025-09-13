@@ -1,0 +1,102 @@
+[
+  {
+    "expression": "A ∨ ~A",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "A ∧ ~A",
+    "classify": "CONTRADICTION"
+  },
+  {
+    "expression": "~A ∨ B",
+    "classify": "CONTINGENCY"
+  },
+  {
+    "expression": "(A ∧ B) → A",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "(A ∧ B) ∨ C",
+    "classify": "CONTINGENCY"
+  },
+  {
+    "expression": "A → (A ∨ B)",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "A ∨ (B ∧ C)",
+    "classify": "CONTINGENCY"
+  },
+  {
+    "expression": "(A → B) ∨ (B → A)",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "(A ∨ B) ∧ (~A ∨ ~B)",
+    "classify": "CONTINGENCY"
+  },
+  {
+    "expression": "(A → B) ∧ (A ∧ ~B)",
+    "classify": "CONTRADICTION"
+  },
+  {
+    "expression": "(A ∧ (B ∨ C)) → (A ∧ B) ∨ (A ∧ C)",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "(A ∨ B) ∧ (~A ∨ C)",
+    "classify": "CONTINGENCY"
+  },
+  {
+    "expression": "((A → B) ∧ (B → C)) → (A → C)",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "(A ↔ B) ∨ (~A ↔ ~B)",
+    "classify": "CONTINGENCY"
+  },
+  {
+    "expression": "(A ↔ B) ∧ (A ∨ B)",
+    "classify": "CONTINGENCY"
+  },
+  {
+    "expression": "(A ↔ ~A)",
+    "classify": "CONTRADICTION"
+  },
+  {
+    "expression": "(A ∧ B) ↔ (~A ∨ ~B)",
+    "classify": "CONTRADICTION"
+  },
+  {
+    "expression": "(A ∨ B) → (B ∨ A)",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "~(A ∧ B) ↔ (~A ∨ ~B)",
+    "classify": "TAUTOLOGY"
+  },
+  {
+    "expression": "(A ∨ (B ∧ C)) ↔ ((A ∨ B) ∧ (A ∨ C))",
+    "classify": "TAUTOLOGY"
+  },
+    {
+      "expression": "A ⊻ B",
+      "classify": "CONTINGENCY"
+    },
+    {
+      "expression": "(A ⊻ B) ⊻ C",
+      "classify": "CONTINGENCY"
+    },
+    {
+      "expression": "A ⊻ A",
+      "classify": "CONTRADICTION"
+    },
+    {
+      "expression": "A ⊻ ~A",
+      "classify": "TAUTOLOGY"
+    },
+    {
+      "expression": "(A ⊻ B) ↔ ~(A ↔ B)",
+      "classify": "TAUTOLOGY"
+    }
+]

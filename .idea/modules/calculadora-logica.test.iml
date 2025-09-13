@@ -2,7 +2,7 @@
 <module external.linked.project.id="calculadora-logica:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
-      <configuration version="5" platform="JVM 21" allPlatforms="JVM [21]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/../../src/main/kotlin;/home/jvbarr/IdeaProjects/calculadora-logica/src/test/kotlin">
+      <configuration version="5" platform="JVM 21" allPlatforms="JVM [21]" useProjectSettings="false" pureKotlinSourceFolders="C:\Users\jrodr\PROJETOS\Calculadora-Logica-Kotlin\src\test\kotlin;C:\Users\jrodr\PROJETOS\Calculadora-Logica-Kotlin\src\main\kotlin">
         <additionalVisibleModuleNames>calculadora-logica:main</additionalVisibleModuleNames>
         <compilerSettings />
         <compilerArguments>
@@ -15,17 +15,18 @@
             <stringArg name="destination" arg="$MODULE_DIR$/../../build/classes/kotlin/test" />
             <stringArg name="jvmTarget" arg="21" />
             <stringArg name="moduleName" arg="calculadora-logica_test" />
-            <stringArg name="apiVersion" arg="1.9" />
-            <stringArg name="languageVersion" arg="1.9" />
+            <stringArg name="apiVersion" arg="2.2" />
+            <stringArg name="languageVersion" arg="2.2" />
           </stringArguments>
           <arrayArguments>
             <arrayArg name="pluginClasspaths">
               <args>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.9.22/79c7960eb58c43865829cb2f420cf8806f59f8b1/kotlin-scripting-jvm-1.9.22.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.9.22/afe984c6e35d6ac356dbdeb79926474ea68ca7d1/kotlin-scripting-common-1.9.22.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.22/d6c44cd08d8f3f9bece8101216dbe6553365c6e3/kotlin-stdlib-1.9.22.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-serialization-compiler-plugin-embeddable/2.2.20/4525e96e09612c05c6468fe2988cf2bd02839a7d/kotlin-serialization-compiler-plugin-embeddable-2.2.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/2.2.20/785d5ffea49d9dc289b200d0ff3e0ce6e9ba2395/kotlin-scripting-jvm-2.2.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/2.2.20/79e0c2cc15b84711ac1de87e6a257acd151cb999/kotlin-scripting-common-2.2.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.20/5380b19fa1924399b62ce3a1faffebb2b4f82272/kotlin-stdlib-2.2.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.20/4c679cbeac0bb583b75c3a080013da8eaf240807/kotlin-script-runtime-2.2.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.22/f8139a46fc677ec9badc49ae954392f4f5e7e7c7/kotlin-script-runtime-1.9.22.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginOptions" />
@@ -34,15 +35,30 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../build/classes/java/test" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_21">
+    <output-test url="file://$MODULE_DIR$/../../build/classes/kotlin/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../src/test" />
-    <orderEntry type="jdk" jdkName="21" jdkType="JavaSDK" />
+    <content url="file://$MODULE_DIR$/../../src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/kotlin" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="calculadora-logica.main" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.22" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test:2.2.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.2.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter:5.10.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test-junit5:2.2.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.9.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-params:5.10.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.10.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apiguardian:apiguardian-api:1.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.10.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.9.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.10.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-launcher:1.10.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.10.1" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="calculadora-logica.main" />
 </module>
