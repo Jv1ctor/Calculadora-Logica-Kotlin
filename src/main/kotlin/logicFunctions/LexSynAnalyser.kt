@@ -21,13 +21,13 @@ object LexSynAnalyser {
                         (beforeExp == null || isOperator(beforeExp) || beforeExp == TokensExpr.OPEN_PARENTHESE) -> true
 
                 token == TokensExpr.TERM &&
-                        (beforeExp == TokensExpr.OPEN_PARENTHESE || isOperator(beforeExp)) -> true
+                        (beforeExp == null || beforeExp == TokensExpr.OPEN_PARENTHESE || isOperator(beforeExp)) -> true
 
                 isOperator(token) &&
                         (beforeExp == TokensExpr.TERM || beforeExp == TokensExpr.CLOSE_PARENTHESE) -> true
 
                 isNotOperator(token) &&
-                        (beforeExp == TokensExpr.OPEN_PARENTHESE || beforeExp == null)  -> true
+                        (beforeExp == TokensExpr.OPEN_PARENTHESE || isOperator(beforeExp) ||beforeExp == null)  -> true
 
 
                 token == TokensExpr.CLOSE_PARENTHESE &&
