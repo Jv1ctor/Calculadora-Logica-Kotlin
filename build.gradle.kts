@@ -3,8 +3,9 @@ kotlin {
 }
 
 plugins {
-    kotlin("jvm") version "1.9.22" // use a versão mais recente do Kotlin instalada
-    application
+    kotlin("jvm") version "2.2.20"
+    id("application")
+    kotlin("plugin.serialization") version "2.2.20"
 }
 
 repositories {
@@ -13,8 +14,16 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
+
+    testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     // exemplo de lib extra:
     // implementation("com.google.code.gson:gson:2.10.1")
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 application {

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClassifyTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2025-09-13T13:59:02.959Z" hostname="NOTEBOOK-JOAO" time="0.2">
+  <properties/>
+  <testcase name="[1] ExpressionCorrect(expression=A ∨ ~A, classify=TAUTOLOGY)" classname="ClassifyTest" time="0.088"/>
+  <testcase name="[2] ExpressionCorrect(expression=A ∧ ~A, classify=CONTRADICTION)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[3] ExpressionCorrect(expression=~A ∨ B, classify=CONTINGENCY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[4] ExpressionCorrect(expression=(A ∧ B) → A, classify=TAUTOLOGY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[5] ExpressionCorrect(expression=(A ∧ B) ∨ C, classify=CONTINGENCY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[6] ExpressionCorrect(expression=A → (A ∨ B), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.001"/>
+  <testcase name="[7] ExpressionCorrect(expression=A ∨ (B ∧ C), classify=CONTINGENCY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[8] ExpressionCorrect(expression=(A → B) ∨ (B → A), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[9] ExpressionCorrect(expression=(A ∨ B) ∧ (~A ∨ ~B), classify=CONTINGENCY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[10] ExpressionCorrect(expression=(A → B) ∧ (A ∧ ~B), classify=CONTRADICTION)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[11] ExpressionCorrect(expression=(A ∧ (B ∨ C)) → (A ∧ B) ∨ (A ∧ C), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[12] ExpressionCorrect(expression=(A ∨ B) ∧ (~A ∨ C), classify=CONTINGENCY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[13] ExpressionCorrect(expression=((A → B) ∧ (B → C)) → (A → C), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[14] ExpressionCorrect(expression=(A ↔ B) ∨ (~A ↔ ~B), classify=CONTINGENCY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[15] ExpressionCorrect(expression=(A ↔ B) ∧ (A ∨ B), classify=CONTINGENCY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[16] ExpressionCorrect(expression=(A ↔ ~A), classify=CONTRADICTION)" classname="ClassifyTest" time="0.001"/>
+  <testcase name="[17] ExpressionCorrect(expression=(A ∧ B) ↔ (~A ∨ ~B), classify=CONTRADICTION)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[18] ExpressionCorrect(expression=(A ∨ B) → (B ∨ A), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.001"/>
+  <testcase name="[19] ExpressionCorrect(expression=~(A ∧ B) ↔ (~A ∨ ~B), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[20] ExpressionCorrect(expression=(A ∨ (B ∧ C)) ↔ ((A ∨ B) ∧ (A ∨ C)), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[21] ExpressionCorrect(expression=A ⊻ B, classify=CONTINGENCY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[22] ExpressionCorrect(expression=(A ⊻ B) ⊻ C, classify=CONTINGENCY)" classname="ClassifyTest" time="0.003"/>
+  <testcase name="[23] ExpressionCorrect(expression=A ⊻ A, classify=CONTRADICTION)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[24] ExpressionCorrect(expression=A ⊻ ~A, classify=TAUTOLOGY)" classname="ClassifyTest" time="0.002"/>
+  <testcase name="[25] ExpressionCorrect(expression=(A ⊻ B) ↔ ~(A ↔ B), classify=TAUTOLOGY)" classname="ClassifyTest" time="0.002"/>
+  <system-out><![CDATA[- Expression A ∨ ~A is TAUTOLOGY 
+
+- Expression A ∧ ~A is CONTRADICTION 
+
+- Expression ~A ∨ B is CONTINGENCY 
+
+- Expression (A ∧ B) → A is TAUTOLOGY 
+
+- Expression (A ∧ B) ∨ C is CONTINGENCY 
+
+- Expression A → (A ∨ B) is TAUTOLOGY 
+
+- Expression A ∨ (B ∧ C) is CONTINGENCY 
+
+- Expression (A → B) ∨ (B → A) is TAUTOLOGY 
+
+- Expression (A ∨ B) ∧ (~A ∨ ~B) is CONTINGENCY 
+
+- Expression (A → B) ∧ (A ∧ ~B) is CONTRADICTION 
+
+- Expression (A ∧ (B ∨ C)) → (A ∧ B) ∨ (A ∧ C) is TAUTOLOGY 
+
+- Expression (A ∨ B) ∧ (~A ∨ C) is CONTINGENCY 
+
+- Expression ((A → B) ∧ (B → C)) → (A → C) is TAUTOLOGY 
+
+- Expression (A ↔ B) ∨ (~A ↔ ~B) is CONTINGENCY 
+
+- Expression (A ↔ B) ∧ (A ∨ B) is CONTINGENCY 
+
+- Expression (A ↔ ~A) is CONTRADICTION 
+
+- Expression (A ∧ B) ↔ (~A ∨ ~B) is CONTRADICTION 
+
+- Expression (A ∨ B) → (B ∨ A) is TAUTOLOGY 
+
+- Expression ~(A ∧ B) ↔ (~A ∨ ~B) is TAUTOLOGY 
+
+- Expression (A ∨ (B ∧ C)) ↔ ((A ∨ B) ∧ (A ∨ C)) is TAUTOLOGY 
+
+- Expression A ⊻ B is CONTINGENCY 
+
+- Expression (A ⊻ B) ⊻ C is CONTINGENCY 
+
+- Expression A ⊻ A is CONTRADICTION 
+
+- Expression A ⊻ ~A is TAUTOLOGY 
+
+- Expression (A ⊻ B) ↔ ~(A ↔ B) is TAUTOLOGY 
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

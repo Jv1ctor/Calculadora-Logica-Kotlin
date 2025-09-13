@@ -1,0 +1,102 @@
+[
+  {
+    "expression": "A ∨ ",
+    "error": "Operador sem operando à direita"
+  },
+  {
+    "expression": "∧ A",
+    "error": "Operador sem operando à esquerda"
+  },
+  {
+    "expression": "A B ∨",
+    "error": "Falta de conectivo entre variáveis"
+  },
+  {
+    "expression": "((A ∨ B)",
+    "error": "Parênteses desbalanceados"
+  },
+  {
+    "expression": "~(A ∧ )",
+    "error": "Falta de variável após operador"
+  },
+  {
+    "expression": "A → → B",
+    "error": "Operadores duplicados incorretos"
+  },
+  {
+    "expression": "A ∨ ∨ B",
+    "error": "Dois conectivos em sequência"
+  },
+  {
+    "expression": "A ↔",
+    "error": "Operador binário sem segundo operando"
+  },
+  {
+    "expression": "((A ∧ B)) )",
+    "error": "Parêntese extra à direita"
+  },
+  {
+    "expression": "(A ∨) B",
+    "error": "Uso incorreto de parênteses"
+  },
+  {
+    "expression": "~~",
+    "error": "Negação sem variável"
+  },
+  {
+    "expression": "A ↔ ↔ B",
+    "error": "Duplicação de operador de equivalência"
+  },
+  {
+    "expression": "( ∨ A)",
+    "error": "Operador solto dentro do parêntese"
+  },
+  {
+    "expression": "(A ∧ (B ∨ ))",
+    "error": "Operador sem operando"
+  },
+  {
+    "expression": "((A ∨ B) ∧ (C",
+    "error": "Parênteses desbalanceados"
+  },
+  {
+    "expression": "A → (B ∧)",
+    "error": "Operador sem variável após parêntese"
+  },
+  {
+    "expression": "(A ∧ ∨ B)",
+    "error": "Dois conectivos entre variáveis"
+  },
+  {
+    "expression": "((A)) ∨ (B))",
+    "error": "Parêntese extra"
+  },
+  {
+    "expression": "A ∨ ~",
+    "error": "Negação sem variável"
+  },
+  {
+    "expression": "A (B ∨ C)",
+    "error": "Falta de operador entre A e parêntese"
+  },
+    {
+      "expression": "⊻ A",
+      "error": "Operador ⊻ sem operando à esquerda"
+    },
+    {
+      "expression": "A ⊻",
+      "error": "Operador ⊻ sem operando à direita"
+    },
+    {
+      "expression": "A ⊻ ⊻ B",
+      "error": "Duplicação incorreta do operador ⊻"
+    },
+    {
+      "expression": "(A ⊻ )",
+      "error": "Parêntese incompleto com operador ⊻"
+    },
+    {
+      "expression": "(⊻ A ∨ B)",
+      "error": "Operador ⊻ usado de forma inválida dentro do parêntese"
+    }
+]

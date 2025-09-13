@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ClassifyTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ClassifyTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; ClassifyTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">25</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.142s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[10] ExpressionCorrect(expression=(A → B) ∧ (A ∧ ~B), classify=CONTRADICTION)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[10]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[11] ExpressionCorrect(expression=(A ∧ (B ∨ C)) → (A ∧ B) ∨ (A ∧ C), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[11]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[12] ExpressionCorrect(expression=(A ∨ B) ∧ (~A ∨ C), classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[12]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[13] ExpressionCorrect(expression=((A → B) ∧ (B → C)) → (A → C), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[13]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[14] ExpressionCorrect(expression=(A ↔ B) ∨ (~A ↔ ~B), classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[14]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[15] ExpressionCorrect(expression=(A ↔ B) ∧ (A ∨ B), classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[15]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[16] ExpressionCorrect(expression=(A ↔ ~A), classify=CONTRADICTION)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[16]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[17] ExpressionCorrect(expression=(A ∧ B) ↔ (~A ∨ ~B), classify=CONTRADICTION)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[17]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[18] ExpressionCorrect(expression=(A ∨ B) → (B ∨ A), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[18]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[19] ExpressionCorrect(expression=~(A ∧ B) ↔ (~A ∨ ~B), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[19]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] ExpressionCorrect(expression=A ∨ ~A, classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[1]</td>
+<td class="success">0.088s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[20] ExpressionCorrect(expression=(A ∨ (B ∧ C)) ↔ ((A ∨ B) ∧ (A ∨ C)), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[20]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[21] ExpressionCorrect(expression=A ⊻ B, classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[21]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[22] ExpressionCorrect(expression=(A ⊻ B) ⊻ C, classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[22]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[23] ExpressionCorrect(expression=A ⊻ A, classify=CONTRADICTION)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[23]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[24] ExpressionCorrect(expression=A ⊻ ~A, classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[24]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[25] ExpressionCorrect(expression=(A ⊻ B) ↔ ~(A ↔ B), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[25]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] ExpressionCorrect(expression=A ∧ ~A, classify=CONTRADICTION)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[2]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] ExpressionCorrect(expression=~A ∨ B, classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[3]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] ExpressionCorrect(expression=(A ∧ B) → A, classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[4]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] ExpressionCorrect(expression=(A ∧ B) ∨ C, classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[5]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] ExpressionCorrect(expression=A → (A ∨ B), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[6]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] ExpressionCorrect(expression=A ∨ (B ∧ C), classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[7]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[8] ExpressionCorrect(expression=(A → B) ∨ (B → A), classify=TAUTOLOGY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[8]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[9] ExpressionCorrect(expression=(A ∨ B) ∧ (~A ∨ ~B), classify=CONTINGENCY)</td>
+<td class="success">classifyValidationTest(ExpressionCorrect)[9]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>- Expression A ∨ ~A is TAUTOLOGY 
+
+- Expression A ∧ ~A is CONTRADICTION 
+
+- Expression ~A ∨ B is CONTINGENCY 
+
+- Expression (A ∧ B) → A is TAUTOLOGY 
+
+- Expression (A ∧ B) ∨ C is CONTINGENCY 
+
+- Expression A → (A ∨ B) is TAUTOLOGY 
+
+- Expression A ∨ (B ∧ C) is CONTINGENCY 
+
+- Expression (A → B) ∨ (B → A) is TAUTOLOGY 
+
+- Expression (A ∨ B) ∧ (~A ∨ ~B) is CONTINGENCY 
+
+- Expression (A → B) ∧ (A ∧ ~B) is CONTRADICTION 
+
+- Expression (A ∧ (B ∨ C)) → (A ∧ B) ∨ (A ∧ C) is TAUTOLOGY 
+
+- Expression (A ∨ B) ∧ (~A ∨ C) is CONTINGENCY 
+
+- Expression ((A → B) ∧ (B → C)) → (A → C) is TAUTOLOGY 
+
+- Expression (A ↔ B) ∨ (~A ↔ ~B) is CONTINGENCY 
+
+- Expression (A ↔ B) ∧ (A ∨ B) is CONTINGENCY 
+
+- Expression (A ↔ ~A) is CONTRADICTION 
+
+- Expression (A ∧ B) ↔ (~A ∨ ~B) is CONTRADICTION 
+
+- Expression (A ∨ B) → (B ∨ A) is TAUTOLOGY 
+
+- Expression ~(A ∧ B) ↔ (~A ∨ ~B) is TAUTOLOGY 
+
+- Expression (A ∨ (B ∧ C)) ↔ ((A ∨ B) ∧ (A ∨ C)) is TAUTOLOGY 
+
+- Expression A ⊻ B is CONTINGENCY 
+
+- Expression (A ⊻ B) ⊻ C is CONTINGENCY 
+
+- Expression A ⊻ A is CONTRADICTION 
+
+- Expression A ⊻ ~A is TAUTOLOGY 
+
+- Expression (A ⊻ B) ↔ ~(A ↔ B) is TAUTOLOGY 
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 13 de set. de 2025 10:59:03</p>
+</div>
+</div>
+</body>
+</html>

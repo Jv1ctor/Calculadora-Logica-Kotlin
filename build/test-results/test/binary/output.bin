@@ -1,0 +1,52 @@
+$- Expression A ∨ ~A is TAUTOLOGY 
+
+(- Expression A ∧ ~A is CONTRADICTION 
+
+&- Expression ~A ∨ B is CONTINGENCY 
+
++- Expression (A ∧ B) → A is TAUTOLOGY 
+
+-- Expression (A ∧ B) ∨ C is CONTINGENCY 
+
++- Expression A → (A ∨ B) is TAUTOLOGY 
+
+-- Expression A ∨ (B ∧ C) is CONTINGENCY 
+
+	3- Expression (A → B) ∨ (B → A) is TAUTOLOGY 
+	
+
+7- Expression (A ∨ B) ∧ (~A ∨ ~B) is CONTINGENCY 
+
+
+8- Expression (A → B) ∧ (A ∧ ~B) is CONTRADICTION 
+
+I- Expression (A ∧ (B ∨ C)) → (A ∧ B) ∨ (A ∧ C) is TAUTOLOGY 
+
+6- Expression (A ∨ B) ∧ (~A ∨ C) is CONTINGENCY 
+
+C- Expression ((A → B) ∧ (B → C)) → (A → C) is TAUTOLOGY 
+
+7- Expression (A ↔ B) ∨ (~A ↔ ~B) is CONTINGENCY 
+
+5- Expression (A ↔ B) ∧ (A ∨ B) is CONTINGENCY 
+
+*- Expression (A ↔ ~A) is CONTRADICTION 
+
+9- Expression (A ∧ B) ↔ (~A ∨ ~B) is CONTRADICTION 
+
+3- Expression (A ∨ B) → (B ∨ A) is TAUTOLOGY 
+
+6- Expression ~(A ∧ B) ↔ (~A ∨ ~B) is TAUTOLOGY 
+
+K- Expression (A ∨ (B ∧ C)) ↔ ((A ∨ B) ∧ (A ∨ C)) is TAUTOLOGY 
+
+%- Expression A ⊻ B is CONTINGENCY 
+
+-- Expression (A ⊻ B) ⊻ C is CONTINGENCY 
+
+'- Expression A ⊻ A is CONTRADICTION 
+
+$- Expression A ⊻ ~A is TAUTOLOGY 
+
+4- Expression (A ⊻ B) ↔ ~(A ↔ B) is TAUTOLOGY 
+
