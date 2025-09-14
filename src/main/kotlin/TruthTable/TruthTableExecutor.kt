@@ -9,7 +9,7 @@ import logicFunctions.RPNEvaluator
 object TruthTableExecutor {
     fun run(response: ResponseToken): ResponseTable {
         val rpn = RPNConverter.toRPN(response.listExpr)
-        val assignments = TruthTableGenerator.allCombinations(response.listTerm)
+        val assignments = TruthTableGenerator.allCombinations(response.listTermWithoutDuplicate)
         val results = assignments.map { RPNEvaluator.evaluate(rpn, it, response.listTerm) }
 
         // Imprime a tabela

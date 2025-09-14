@@ -9,8 +9,9 @@ import TruthTable.TruthTableExecutor
 
 
 fun main() {
-    // val exp = "(A ∧ B) → C ∨ A"
-    val exp = "~A ∨ B"
+//     val exp = "(A ∧ B) → B ∨ A"
+//    val exp = "(A ↔ B) ∧ (A ∨ B)"
+    val exp = "(A → B) ∨ (B → A)"
 
     val tokens = Tokenizer.generate(exp)
     println("Execução da validação sintatica e lexica: \n")

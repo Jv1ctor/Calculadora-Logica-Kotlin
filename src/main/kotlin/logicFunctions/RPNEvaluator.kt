@@ -14,6 +14,11 @@ object RPNEvaluator {
                     val name = terms[termIndex].byName
                     stack.push(assignment[name] ?: false)
                     termIndex++
+
+                    // reinicia o index quando para duplicatas
+                    if(termIndex == terms.size){
+                        termIndex = 0
+                    }
                 }
                 token == TokensExpr.OP_NOT -> {
                     val a = stack.pop()
