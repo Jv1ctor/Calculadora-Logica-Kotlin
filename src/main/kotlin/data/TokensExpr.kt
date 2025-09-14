@@ -10,5 +10,5 @@ enum class TokensExpr(val order: Int) {
     OP_THEN(1),
     OP_EXTHEN(1),
     TERM(-1),
-    UNDERFINED(-1)
+    UNDEFINED(-1)
 }

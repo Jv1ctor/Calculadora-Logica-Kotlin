@@ -36,7 +36,7 @@ object Tokenizer {
                         listOfExpressionOrder.add(TokensExpr.TERM)
                         listOfTerm.add(Term(exp))
                     } else {
-                        listOfExpressionOrder.add(TokensExpr.UNDERFINED)
+                        listOfExpressionOrder.add(TokensExpr.UNDEFINED)
                     }
                 }
             }
